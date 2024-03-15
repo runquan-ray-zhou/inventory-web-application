@@ -3,14 +3,9 @@
     font-family: sans-serif;
 }
 
-body {
-    background-color: ;
-}
-
 .header {
     background: black;
     text-align: center;
-    font-size: 0.9em;
     padding: 40px;
     margin-top: 0;
     margin-bottom: 0;
@@ -18,17 +13,10 @@ body {
 }
 
 .header__heading {
-    font-size: 3em;
+    font-size: 2.75em;
     color: white;
 }
 
-.resources__book {
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    padding-right: 30px;
-    margin-right: 10px;
-}
 
 main {
     background: whitesmoke;
@@ -40,7 +28,8 @@ main {
 
 @media (width <= 850px) {
     main {
-        padding: 20px 14% 20px 14%;        margin: 0px;
+        padding: 20px 14% 20px 14%;
+        margin: 0px;
         display: flex;
         flex-direction: column;
         font-size: 1em;
@@ -50,12 +39,26 @@ main {
 
 @media (width <= 525px) {
     main {
-        padding: 20px 14% 20px 14%;        margin: 0px;
+        padding: 20px 14% 20px 14%;
+        margin: 0px;
         display: flex;
         flex-direction: column;
         font-size: 0.75em;
     }
     
+}
+
+.resources {
+    height: 700px;
+    overflow: scroll;
+}
+
+.resources__book {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-right: 30px;
+    margin-right: 10px;
 }
 
 .resources__book-img {
@@ -81,15 +84,19 @@ main {
     text-align: right;
 }
 
+hr {
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+}
+
 .resources__book-author {
     margin-bottom: 10px;
     font-style: italic;
     font-weight: 100;
 }
 
-hr {
-    border: 1px solid lightgrey;
-    margin-bottom: 5px;
+.resources__book-price {
+    font-size: 0.85em;
 }
 
 .resources__stock-button {
@@ -100,10 +107,6 @@ hr {
     border: none;
     border-radius: 4px;
     background: lightgrey;
-}
-
-.resources__book-price {
-    font-size: 0.85em;
 }
 
 .resources__remove-button {
@@ -129,14 +132,14 @@ label {
     margin: 3px 0px 12px 0px;
     border-radius: none;
     border: 1px solid lightgray;
-    padding: 2px 0px;
+    padding: 4px 0px;
 }
 
-select {
+.add-new__select {
     font-size: 0.9em;
     width: 99%;
     margin: 3px 0px 14px 0px;
-    padding: 2px 0px;
+    padding: 4px 0px;
     border-radius: none;
     border: 1px solid lightgray;
 }
@@ -146,7 +149,7 @@ select {
     margin: 5px 0px 10px 0px;
     font-size: 0.50em;
     font-weight: 900;
-    border: none;
+    /* border: none; */
     border-radius: 4px;
     background: lightgrey;
 }
@@ -156,7 +159,7 @@ select {
     margin: 5px 0px 10px 0px;
     font-size: 0.50em;
     font-weight: 900;
-    border: none;
+    /* border: none; */
     border-radius: 4px;
     background: rgb(99, 183, 234);
 }
