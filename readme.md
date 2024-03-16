@@ -38,10 +38,8 @@ Entry date into the system.
 
 Step 1, copy bookstore inventory layout and make same page with all the functionalities listed in bookstore_readme
 
+add stock count display
+
+add 
+
 Step 2, make freezer inventory page.
-
-Have two sections, left section display list of inventor, right section have 2 forms, top form to add inventory, bottom form is find info. bottom form is only for freezer page.
-
-Left section will have scrollbar to show all inventory.  Each source or book will be in its own div block
-
-Each book div with be two part, img on left and info on right.
