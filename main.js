@@ -89,6 +89,8 @@ form.addEventListener("submit", (event) => {
     if (targetBook === null) {
 
         section.prepend(entry)
+
+        form.reset()
         
     } else if (targetBook.id && isbn === targetBook.id) {
         targetBook.childNodes[17].textContent = Number(targetBook.childNodes[17].textContent) + Number(amount)
