@@ -1,12 +1,16 @@
 const form = document.querySelector("form")
 
+// make function to add event listener to remove ele
+
 function addRemoveFunc(ele) {
     ele.addEventListener("click", event => {
         event.target.parentNode.parentNode.remove()
     })
 
     return ele
-}    
+}
+
+// give all remove button event listener to remove ele
 
 const buttons = document.querySelectorAll(".resources__remove-button")
 
@@ -14,7 +18,17 @@ for (let button of buttons) {
     addRemoveFunc(button)
 }
 
+// declare stock amount
+
 let stockAmount = 0
+
+// declare stock status
+
+let stockStatus;
+
+// add submit event listener to form
+
+const section = document.querySelector(".resources")
 
 form.addEventListener("submit", (event) => {
 
@@ -44,6 +58,10 @@ form.addEventListener("submit", (event) => {
         stockAmount += Number(amount)
     }
 
+    stockAmount > 0 ? stockStatus = "In Stock" : stockStatus = "Out of Stock"
+
+    stockAmount > 0 ? color = "black" : color = "red"
+
     div.classList.add("resources__book")
     
     div.innerHTML = `<img class="resources__book-img" src="${url}" alt="${title}">
@@ -55,11 +73,10 @@ form.addEventListener("submit", (event) => {
         <br>
         <span class="resources__book-isbn">${isbn}</span>
         <br>
-        <button class="resources__stock-button">In Stock</button> <button class="resources__stock-button">${stockAmount}</button>
+        <button class="resources__stock-button" style="color: ${color};">${stockStatus}</button> <button class="resources__stock-count">${stockAmount}</button>
         <br>
         <button class="resources__remove-button">Remove</button>
     </div>`;
-    const section = document.querySelector(".resources")
 
     const removeButton = div.childNodes[2].childNodes[21]
     
@@ -67,27 +84,26 @@ form.addEventListener("submit", (event) => {
 
     const targetBook = document.getElementById(`${isbn}`)
 
-    console.log(targetBook)
-
-    // console.log(targetBook.childNodes[17].textContent)
+    const entry = div.cloneNode(true)
 
     if (targetBook === null) {
 
-        section.prepend(div)
+        section.prepend(entry)
         
     } else if (targetBook.id && isbn === targetBook.id) {
-        
         targetBook.childNodes[17].textContent = Number(targetBook.childNodes[17].textContent) + Number(amount)
-        
+        targetBook.childNodes[15].textContent = "In Stock"
+        targetBook.childNodes[15].style.color = "black"
     }
-    
-    
 
+    if (targetBook.childNodes[17].textContent <= 0) {
+        targetBook.childNodes[15].style.color = "red"
+        targetBook.childNodes[15].textContent = "Out of Stock"
+    }
+
+    form.reset()
+    
 })
-
-// const targetBook = document.getElementById("978-0593435106")
-
-// console.log(Number(targetBook.childNodes[17].textContent))
 
 const resetButton = document.querySelector(".add-new__reset-button")
 

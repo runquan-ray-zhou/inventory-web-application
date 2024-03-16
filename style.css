@@ -100,7 +100,8 @@ hr {
     font-size: 0.85em;
 }
 
-.resources__stock-button {
+.resources__stock-button,
+.resources__stock-count {
     padding: 4px 8px;
     margin: 5px 0px 10px 0px;
     font-size: 0.50em;
@@ -139,7 +140,7 @@ label {
 
 .add-new__select {
     font-size: 0.9em;
-    width: 102%;
+    width: 101.5%;
     margin: 3px 0px 14px 0px;
     padding: 4px 0px;
     border-radius: none;
