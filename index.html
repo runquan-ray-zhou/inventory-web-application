@@ -61,7 +61,14 @@
         </section>
         <section class="add-new">
             <div class="add-new-update">
-            <h2 class="add-new__heading"><input id="add-new__radio" name="inventory-type" type="radio" checked />Add New Book</h2> <h2 class="update__heading"><input id="update__radio" name="inventory-type" type="radio" />Update Stock</h2>
+            <h2 class="add-new__heading">
+                <label for="add-new__radio">
+                    <input id="add-new__radio" name="inventory-type" type="radio" value="Add New Book" checked/>
+                </label>Add New Book</h2> 
+            <h2 class="update__heading">
+                <label for="update__radio">
+                    <input id="update__radio" name="inventory-type" type="radio" value="Update Stock"/>
+                </label>Update Stock</h2>
             </div>
             <hr>
             <form class="add-new__form">
@@ -104,6 +111,7 @@
                     <input class="add-new__input" type="text" name="amount" id="amount" required/>
                 </label>
                 <br>
+                <ul></ul>
                 <input class="add-new__reset-button" type="button" name="clear" id="clear" value="Reset" />
                 <input class="add-new__submit-button" type="submit" value="Submit"/>
             </form>

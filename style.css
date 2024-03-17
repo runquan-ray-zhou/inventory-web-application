@@ -86,6 +86,9 @@ main {
     justify-content: space-between;
 }
 
+input[type='radio'] { 
+    transform: scale(1.5); 
+}
 
 .update__heading {
     text-align: right;
@@ -138,7 +141,7 @@ label {
 
 .add-new__input {
     font-size: 0.9em;
-    width: 99%;
+    width: 96%;
     margin: 3px 0px 12px 0px;
     border-radius: none;
     border: 1px solid lightgray;
@@ -147,11 +150,25 @@ label {
 
 .add-new__select {
     font-size: 0.9em;
-    width: 101.5%;
+    width: 99%;
     margin: 3px 0px 14px 0px;
     padding: 4px 0px;
     border-radius: none;
     border: 1px solid lightgray;
+}
+
+ul {
+    background: red;
+    padding: 20px;
+    font-size: 0.75em;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+li {
+    margin-left: 10px;
 }
 
 .add-new__reset-button {

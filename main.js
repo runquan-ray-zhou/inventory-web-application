@@ -28,6 +28,20 @@ let stockStatus;
 
 // add submit event listener to form
 
+const add = document.getElementById("add-new__radio");
+
+const update = document.getElementById("update__radio")
+
+const ul = document.querySelector("ul")
+
+const titleErrorLi = document.createElement("li")
+
+titleErrorLi.innerText = "Please enter Title of Book"
+
+ul.append(titleErrorLi)
+
+console.log(titleErrorLi)
+
 const section = document.querySelector(".resources")
 
 form.addEventListener("submit", (event) => {
@@ -35,6 +49,10 @@ form.addEventListener("submit", (event) => {
     event.preventDefault()
 
     const title = event.target.title.value
+
+    if (add.checked && !title) {
+
+    }
 
     const author = event.target.author.value
 
