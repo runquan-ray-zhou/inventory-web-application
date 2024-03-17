@@ -10,6 +10,8 @@ Add picture of freezer interiors with racks, but no label on the rack.  A couple
 
 Below are entries to the form.
 
+Brand
+
 Product Name.
 
 Vendor.

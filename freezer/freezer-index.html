@@ -8,8 +8,9 @@
     <script src="./freezer-main.js" defer></script>
 </head>
 <body>
-    <header>
-        <span>logo</span>
+    <header class="header">
+        <span class="header__logo">logo</span>
+        <h1>Freeeezer Inventory</h1>
         <nav>
             <ul>
                 <li>About Freeeezer</li>
@@ -29,23 +30,85 @@
         <section>
             <div>
                 <h2>Search Inventory</h2>
-
+                <form>
+                <label for="">Product Name
+                    <input type="text"/>
+                </label>
+                <label for="">Product Code
+                    <input type="number"/>
+                </label>
+                <label for="">Product Type
+                    <input type="text"/>
+                </label>
+                <label for="">Product Brand
+                    <input type="text"/>
+                </label>
+                </form>
             </div>
             <div>
                 <h2>Add To Inventory</h2>
+                <form>
+                    <label for="">Name
+                        <input type="text"/>
+                    </label>
+                    <label for="">Code
+                        <input type="number"/>
+                    </label>
+                    <label for="">Type
+                        <input type="text"/>
+                    </label>
+                    <label for="">Brand
+                        <input type="text"/>
+                    </label>
+                    <label for="">Vendor
+                        <input type="text"/>
+                    </label>
+                    <label for="">FDA status
+                        <input type="text"/>
+                    </label>
+                    <label for="">Case Count on Pallet
+                        <input type="number"/>
+                    </label>
+                    <label for="">LB per case
+                        <input type="number"/>
+                    </label>
+                    <label for="">Cost per LB
+                        <input type="number"/>
+                    </label>
+                    <label for="">Total Weight on Pallet
+                        <input type="number"/>
+                    </label>
+                    <label for="">Total Cost per Pallet
+                        <input type="number"/>
+                    </label>
+                    <label for="">Purchaser
+                        <input type="text"/>
+                    </label>
+                    <label for="">Purchase date
+                        <input type="date"/>
+                    </label>
+                    <label for="">Entry date
+                        <input type="date"/>
+                    </label>
+                    <label for="">Expire date
+                        <input type="date"/>
+                    </label>
 
+                </form>
             </div>
         </section>
         <section>
             <div>
-                <h2>Selected Product Information<h2>
-
+                <h2>Selected Product Information</h2>
+                <div>Values</div>
+                <div>Search Results</div>
             </div>
-
         </section>
     </main>
     <footer>
-
+        <nav>
+            <li>Export Selected</li>
+        </nav>
     </footer>    
 </body>
 </html>
