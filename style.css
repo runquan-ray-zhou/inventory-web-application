@@ -181,6 +181,12 @@ li {
     background: lightgrey;
 }
 
+.add-new__reset-button:hover,
+.add-new__submit-button,
+.resources__remove-button {
+    cursor: pointer;
+}
+
 .add-new__submit-button {
     padding: 6px 35px;
     margin: 5px 0px 10px 0px;
