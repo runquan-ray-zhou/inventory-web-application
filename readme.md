@@ -38,8 +38,8 @@ Entry date into the system.
 
 Step 1, copy bookstore inventory layout and make same page with all the functionalities listed in bookstore_readme
 
-add stock count display
+completed basic goals
 
-add 
+will attempt stretch goals when there is extra time
 
 Step 2, make freezer inventory page.
