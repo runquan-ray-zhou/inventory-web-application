@@ -58,7 +58,7 @@ priceErrorLi.innerText = "Please enter a Price."
 
 const stockErrorLi = document.createElement("li")
 
-stockErrorLi.innerText = "Please select an In Stock status."
+stockErrorLi.innerText = "Please select CORRECT In Stock status."
 
 const amountErrorLi = document.createElement("li")
 
@@ -67,6 +67,18 @@ amountErrorLi.innerText = "Please give entering or leaving stock count."
 const reEnterError = document.createElement("li")
 
 reEnterError.innerText = "PLEASE CLICK RESET AND ENTER REQUIRED FIELDS.  THANKS"
+
+// Get list of all isbn on page
+
+const allIsbn = document.querySelectorAll(".resources__book-isbn")
+
+let isbnArray = []
+
+for (let isbn of allIsbn) {
+    isbnArray.push(isbn.innerText)
+}
+
+console.log(isbnArray)
 
 const section = document.querySelector(".resources")
 
@@ -106,7 +118,7 @@ form.addEventListener("submit", (event) => {
         ul.append(isbnErrorLi)
     }
 
-    if (update.checked && !isbn) {
+    if (update.checked && !isbnArray.includes(isbn)) {
         ul.append(isbnErrorLi)
     }
 
@@ -125,10 +137,13 @@ form.addEventListener("submit", (event) => {
     if (select.options[select.selectedIndex].text === "-- Select One --") {
         ul.append(stockErrorLi)
     }
-
     
     if (select.options[select.selectedIndex].text === "-- No --") {
         stockAmount = amount
+    }
+
+    if (select.options[select.selectedIndex].text === "-- No --" && update.checked) {
+        ul.append(stockErrorLi)
     }
     
     if (select.options[select.selectedIndex].text === "-- Yes --") {
@@ -168,7 +183,7 @@ form.addEventListener("submit", (event) => {
         ul.style.removeProperty("display")
         entry = ""
     } else {
-        entry  = div
+        entry = div
     }
 
     if (targetBook === null) {
