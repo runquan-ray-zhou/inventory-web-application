@@ -34,13 +34,37 @@ const update = document.getElementById("update__radio")
 
 const ul = document.querySelector("ul")
 
+ul.style.display = "none"
+
 const titleErrorLi = document.createElement("li")
 
-titleErrorLi.innerText = "Please enter Title of Book"
+titleErrorLi.innerText = "Please enter Title of Book."
 
-ul.append(titleErrorLi)
+const authorErrorLi = document.createElement("li")
 
-console.log(titleErrorLi)
+authorErrorLi.innerText = "Please enter Author of Book."
+
+const imageErrorLi = document.createElement("li")
+
+imageErrorLi.innerText = "Please enter Image URL."
+
+const isbnErrorLi = document.createElement("li")
+
+isbnErrorLi.innerText = "Please enter a valid ISBN."
+
+const priceErrorLi = document.createElement("li")
+
+priceErrorLi.innerText = "Please enter a Price."
+
+const stockErrorLi = document.createElement("li")
+
+stockErrorLi.innerText = "Please select an In Stock status."
+
+const amountErrorLi = document.createElement("li")
+
+amountErrorLi.innerText = "Please give entering or leaving stock count."
+
+// ul.append(titleErrorLi, authorErrorLi, imageErrorLi, isbnErrorLi, priceErrorLi, stockErrorLi, amountErrorLi)
 
 const section = document.querySelector(".resources")
 
@@ -51,34 +75,58 @@ form.addEventListener("submit", (event) => {
     const title = event.target.title.value
 
     if (add.checked && !title) {
-
+        ul.append(titleErrorLi)
     }
 
     const author = event.target.author.value
 
+    if (add.checked && !author) {
+        ul.append(authorErrorLi)
+    }
+
     const url = event.target.url.value
+
+    if (add.checked && !url) {
+        ul.append(imageErrorLi)
+    }
 
     const price = event.target.price.value
 
+    if (add.checked && !price) {
+        ul.append(priceErrorLi)
+    }
+
     const isbn = event.target.isbn.value
+
+    if (add.checked && !isbn) {
+        ul.append(isbnErrorLi)
+    }
 
     const amount = event.target.amount.value
 
-    const div = document.createElement("div")
+    if (add.checked && !amount) {
+        ul.append(amountErrorLi)
+    }
 
     const select = document.querySelector(".add-new__select")
-
+    
+    if (select.options[select.selectedIndex].text === "-- Select One --") {
+        ul.append(stockErrorLi)
+    }
+    
     if (select.options[select.selectedIndex].text === "-- No --") {
         stockAmount = amount
     }
-
+    
     if (select.options[select.selectedIndex].text === "-- Yes --") {
         stockAmount += Number(amount)
     }
-
+    
     stockAmount > 0 ? stockStatus = "In Stock" : stockStatus = "Out of Stock"
-
+    
     stockAmount > 0 ? color = "black" : color = "red"
+    
+    const div = document.createElement("div")
 
     div.classList.add("resources__book")
     
