@@ -64,9 +64,13 @@ const amountErrorLi = document.createElement("li")
 
 amountErrorLi.innerText = "Please give entering or leaving stock count."
 
-// ul.append(titleErrorLi, authorErrorLi, imageErrorLi, isbnErrorLi, priceErrorLi, stockErrorLi, amountErrorLi)
+const reEnterError = document.createElement("li")
+
+reEnterError.innerText = "PLEASE CLICK RESET AND ENTER REQUIRED FIELDS.  THANKS"
 
 const section = document.querySelector(".resources")
+
+let entry;
 
 form.addEventListener("submit", (event) => {
 
@@ -102,9 +106,17 @@ form.addEventListener("submit", (event) => {
         ul.append(isbnErrorLi)
     }
 
+    if (update.checked && !isbn) {
+        ul.append(isbnErrorLi)
+    }
+
     const amount = event.target.amount.value
 
     if (add.checked && !amount) {
+        ul.append(amountErrorLi)
+    }
+
+    if (update.checked && !amount) {
         ul.append(amountErrorLi)
     }
 
@@ -113,6 +125,7 @@ form.addEventListener("submit", (event) => {
     if (select.options[select.selectedIndex].text === "-- Select One --") {
         ul.append(stockErrorLi)
     }
+
     
     if (select.options[select.selectedIndex].text === "-- No --") {
         stockAmount = amount
@@ -127,7 +140,7 @@ form.addEventListener("submit", (event) => {
     stockAmount > 0 ? color = "black" : color = "red"
     
     const div = document.createElement("div")
-
+    
     div.classList.add("resources__book")
     
     div.innerHTML = `<img class="resources__book-img" src="${url}" alt="${title}">
@@ -150,7 +163,13 @@ form.addEventListener("submit", (event) => {
 
     const targetBook = document.getElementById(`${isbn}`)
 
-    const entry = div.cloneNode(true)
+    if(ul.childNodes.length > 0) {
+        ul.append(reEnterError)
+        ul.style.removeProperty("display")
+        entry = ""
+    } else {
+        entry  = div
+    }
 
     if (targetBook === null) {
 
@@ -177,6 +196,10 @@ const resetButton = document.querySelector(".add-new__reset-button")
 
 resetButton.addEventListener("click", event => {
 
-    form.reset()
+    ul.innerHTML = ""
 
+    ul.style.display = "none"
+    
+    form.reset()
+    
 })
