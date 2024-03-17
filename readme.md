@@ -43,3 +43,5 @@ completed basic goals
 will attempt stretch goals when there is extra time
 
 Step 2, make freezer inventory page.
+
+add fav icon
