@@ -14,7 +14,7 @@
             <img class="header__logo-img" src="/freezer/assets/172-1723132_freezer-dragon-ball-head-hd-png-download.png" alt="header__logo">
         </div>
         <div class="header__right-">
-            <h1 class="header__right-text">Freeeezer Inventory</h1>
+            <h1 class="header__right-text">Freeeezer Warehouse Inventory</h1>
             <!-- <img class="header__background-img" src="#" alt="header__background-img"> -->
             <nav class="header__right-navbar">
                     <span class="header__right-navbar-about">About</span>
@@ -41,14 +41,12 @@
                 <input id="searchCode" class="search-inventory__form-code" name="searchCode" type="number"/>
                 <label for="searchCode">Product Code
                 </label>
-                <br>
                 <input id="searchType" class="search-inventory__form-type" name="searchType" type="text"/>
                 <label for="searchType">Product Type
                 </label>
                 <input id="searchBrand" class="search-inventory__form-brand" name="searchBrand" type="text"/>
                 <label for="searchBrand">Product Brand
                 </label>
-                <br>
                 <input class="search-inventory__form-reset-button" type="button" value="Reset"/>
                 <input class="search-inventory__form-submit-button" type="submit" value="Submit">
                 </form>
@@ -92,19 +90,15 @@
                     <input id="addPurchaser" class="add-inventory__form-purchaser" name="addPurchaser" type="text"/>
                     <label for="addPurchaser">Purchaser
                     </label>
-                    <br>
+                    <input id="addPDate" class="add-inventory__form-pdate" name="addPDate" type="date"/>
                     <label for="addPDate">Purchase date
-                        <input id="addPDate" class="add-inventory__form-pdate" name="addPDate" type="date"/>
                     </label>
-                    <br>
+                    <input id="addEDate" class="add-inventory__form-edate" name="addEDate" type="date"/>
                     <label for="addEDate">Entry date
-                        <input id="addEDate" class="add-inventory__form-edate" name="addEDate" type="date"/>
                     </label>
-                    <br>
+                    <input id="addXDate" class="add-inventory__form-xdate" name="addXDate" type="date"/>
                     <label for="addXDate">Expire date
-                        <input id="addXDate" class="add-inventory__form-xdate" name="addXDate" type="date"/>
                     </label>
-                    <br>
                     <input class="add-inventory__form-reset-button" type="button" value="Reset"/>
                     <input class="add-inventory__form-submit-button" type="submit" value="Submit">
                 </form>
@@ -112,7 +106,7 @@
         </section>
         <section class="inventory-result">
             <div>
-                <h2>Selected Product Information</h2>
+                <h2 class="inventory-result__header">Selected Product Information</h2>
                 <div>Values</div>
                 <div>Search Results</div>
             </div>
