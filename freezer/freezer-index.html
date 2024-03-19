@@ -10,94 +10,96 @@
 <body>
     <header class="header">
         <span class="header__logo">logo</span>
-        <h1>Freeeezer Inventory</h1>
-        <nav>
-            <ul>
-                <li>About Freeeezer</li>
-                <li>How To Use</li>
-                <li>Get Help</li>
-                <li>Switch User</li>
-                <li>Log in / Log out</li>
-            </ul>
+        <h1 class="header__background-text">Freeeezer Inventory</h1>
+        <img class="header__background-img" src="#" alt="header__background-img">
+        <nav class="header__navbar">
+                <span class="header__navbar-about">About Freeeezer</span>
+                <span class="header__navbar-how-">How To Use</span>
+                <span class="header__navbar-help">Get Help</span>
+                <span class="header__navbar-user">Switch User</span>
+                <span class="header__navbar-log">Log in / Log out</span>
         </nav>
     </header>
-    <main>
-        <section>
-            <div>
-                <img src="#" alt="selected-products-image">
+    <main class="main">
+        <section class="product__img">
+            <div class="product__img-container">
+                <img src="#" alt="product__img">
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Search Inventory</h2>
-                <form>
-                <label for="">Product Name
-                    <input type="text"/>
+        <section class="inventory">
+            <div class="search-inventory">
+                <h2 class="search-inventory__header">Search Inventory</h2>
+                <form class="search-inventory__form">
+                <label for="searchName">Product Name
+                    <input id="searchName" class="search-inventory__form-name" name="searchName" type="text"/>
                 </label>
-                <label for="">Product Code
-                    <input type="number"/>
+                <label for="searchCode">Product Code
+                    <input id="searchCode" class="search-inventory__form-code" name="searchCode" type="number"/>
                 </label>
-                <label for="">Product Type
-                    <input type="text"/>
+                <label for="searchType">Product Type
+                    <input id="searchType" class="search-inventory__form-type" name="searchType" type="text"/>
                 </label>
-                <label for="">Product Brand
-                    <input type="text"/>
+                <label for="searchBrand">Product Brand
+                    <input id="searchBrand" class="search-inventory__form-brand" name="searchBrand" type="text"/>
                 </label>
+                <input class="search-inventory__form-reset-button" type="button" value="Reset"/>
+                <input class="search-inventory__form-submit-button" type="submit" value="Submit">
                 </form>
             </div>
-            <div>
-                <h2>Add To Inventory</h2>
-                <form>
-                    <label for="">Name
-                        <input type="text"/>
+            <div class="add-inventory">
+                <h2 class="add-inventory__header">Add To Inventory</h2>
+                <form class="add-inventory__form">
+                    <label for="addName">Name
+                        <input id="addName" class="add-inventory__form-name" name="addName" type="text"/>
                     </label>
-                    <label for="">Code
-                        <input type="number"/>
+                    <label for="addCode">Code
+                        <input id="addCode" class="add-inventory__form-code" name="addCode" type="number"/>
                     </label>
-                    <label for="">Type
-                        <input type="text"/>
+                    <label for="addType">Type
+                        <input id="addType" class="add-inventory__form-type" name="addType" type="text"/>
                     </label>
-                    <label for="">Brand
-                        <input type="text"/>
+                    <label for="addBrand">Brand
+                        <input id="addBrand" class="add-inventory__form-brand" name="addBrand" type="text"/>
                     </label>
-                    <label for="">Vendor
-                        <input type="text"/>
+                    <label for="addVendor">Vendor
+                        <input id="addVendor" class="add-inventory__form-vendor" name="addVendor" type="text"/>
                     </label>
-                    <label for="">FDA status
-                        <input type="text"/>
+                    <label for="addFDA">FDA status
+                        <input id="addFDA" class="add-inventory__form-fda" name="addFDA" type="text"/>
                     </label>
-                    <label for="">Case Count on Pallet
-                        <input type="number"/>
+                    <label for="addCase">Case Count on Pallet
+                        <input id="addCase" class="add-inventory__form-case" name="addCase" type="number"/>
                     </label>
-                    <label for="">LB per case
-                        <input type="number"/>
+                    <label for="addLb">lb per Case
+                        <input id="addLb" class="add-inventory__form-lb" name="addLb" type="number"/>
                     </label>
-                    <label for="">Cost per LB
-                        <input type="number"/>
+                    <label for="addCost">Cost per lb
+                        <input id="addCost" class="add-inventory__form-cost" name="addCost" type="number"/>
                     </label>
-                    <label for="">Total Weight on Pallet
-                        <input type="number"/>
+                    <label for="addWeight">Total Weight on Pallet
+                        <input id="addWeight" class="add-inventory__form-weight" name="addWeight" type="number"/>
                     </label>
-                    <label for="">Total Cost per Pallet
-                        <input type="number"/>
+                    <label for="addTotal">Total Cost per Pallet
+                        <input id="addTotal" class="add-inventory__form-total" name="addTotal" type="number"/>
                     </label>
-                    <label for="">Purchaser
-                        <input type="text"/>
+                    <label for="addPurchaser">Purchaser
+                        <input id="addPurchaser" class="add-inventory__form-purchaser" name="addPurchaser" type="text"/>
                     </label>
-                    <label for="">Purchase date
-                        <input type="date"/>
+                    <label for="addPDate">Purchase date
+                        <input id="addPDate" class="add-inventory__form-pdate" name="addPDate" type="date"/>
                     </label>
-                    <label for="">Entry date
-                        <input type="date"/>
+                    <label for="addEDate">Entry date
+                        <input id="addEDate" class="add-inventory__form-edate" name="addEDate" type="date"/>
                     </label>
-                    <label for="">Expire date
-                        <input type="date"/>
+                    <label for="addXDate">Expire date
+                        <input id="addXDate" class="add-inventory__form-xdate" name="addXDate" type="date"/>
                     </label>
-
+                    <input class="add-inventory__form-reset-button" type="button" value="Reset"/>
+                    <input class="add-inventory__form-submit-button" type="submit" value="Submit">
                 </form>
             </div>
         </section>
-        <section>
+        <section class="inventory-result">
             <div>
                 <h2>Selected Product Information</h2>
                 <div>Values</div>
@@ -105,9 +107,9 @@
             </div>
         </section>
     </main>
-    <footer>
-        <nav>
-            <li>Export Selected</li>
+    <footer class="footer">
+        <nav class="footer__navbar">
+            <span>Export Selected</span>
         </nav>
     </footer>    
 </body>
