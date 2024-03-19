@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freeeezer Warehouse App</title>
+    <title>Cold Storage Warehouse App</title>
     <link rel="icon" type="image/x-icon" href="/freezer/assets/ODS-StickersPacks_Frieza.png">
     <link rel="stylesheet" href="freezer-style.css">
     <script src="./freezer-main.js" defer></script>
@@ -14,7 +14,7 @@
             <img class="header__logo-img" src="/freezer/assets/172-1723132_freezer-dragon-ball-head-hd-png-download.png" alt="header__logo">
         </div>
         <div class="header__right-">
-            <h1 class="header__right-text">Freeeezer Warehouse Inventory</h1>
+            <h1 class="header__right-text">Cold Storage Warehouse Inventory</h1>
             <!-- <img class="header__background-img" src="#" alt="header__background-img"> -->
             <nav class="header__right-navbar">
                     <span class="header__right-navbar-about">About</span>
@@ -26,9 +26,20 @@
         </div>
     </header>
     <main class="main">
-        <section class="product__img">
+        <section class="product">
             <div class="product__img-container">
-                <img src="/freezer/assets/Cartoons__Anime_Dragonball_Artboard_12-512.webp" alt="product__img">
+                <h2>Product Image</h2>
+                <img class ="product__img" src="/freezer/assets/Cartoons__Anime_Dragonball_Artboard_12-512.webp" alt="product__img">
+                <div class="warehouse-info">
+                    <h2 class="warehouse-info__header">Warehouse Info</h2>
+                    <input type="number">
+                    <label for="">:Current Temp</label>
+                    <input type="number" name="" id="">
+                    <label for="">:Capacity</label>
+                    <input type="number" name="" id="">
+                    <label for="">:Rack Space Availability</label>
+                </div>
+
             </div>
         </section>
         <section class="inventory">

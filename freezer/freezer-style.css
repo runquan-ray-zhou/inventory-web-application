@@ -45,9 +45,17 @@ img {
     width: 400px;
 }
 
-.product__img {
+.product{
     grid-column: 1 / 1;
     border: 2px solid lightpink
+}
+
+.product__img {
+    border-bottom: 2px solid orange;
+}
+
+.product__img-container {
+    display: block;
 }
 
 .inventory {
