@@ -1,49 +1,13 @@
-This is the introduction to the inventory web application project.
+# General Warehouse Inventory Web App
 
-I will layout what the project will be.
+## Introduction
 
-This will be a an inventory web app for freezer storage units in giant warehouses.
+Hi, my name is Runquan (Ray) Zhou, a software developer refining my skills through the Pursuit program.  This GitHub repository showcases my project, where I've replicated the "Bookstore Inventory" webpage to demonstrate my proficiency in HTML, CSS, and Javascript (DOM).  This project marks my foundational understanding of these coding language in my learning journey.  Looking ahead I aim to implement various functionalities into a comprehensive warehouse inventory web application.  The cold storage warehouse inventory webpage serves as the initial template for this ambitious project.  Thank you for taking the time to explore my work.
 
-Develop for mobile web version first.
+I gained inventory control experience at a small frozen seafood import, export, wholesale company in Brooklyn, NY.  In this company of 5 employees, I worked closely with the owner, handling clerical tasks and occasionally assisting with the warehouse and delivery duties.  My responsibilities included maintaining inventory control for products stored in various cold storage facilities across the US. 
 
-Add picture of freezer interiors with racks, but no label on the rack.  A couple of photo with pallet on the rack and also photo of empty rack.
+I managed inventory simultaneously across at least six different warehouses using only pen, paper, and Excel sheets due to limited resources.  This restricted my ability to generate comprehensive data for the company.  It's been over 12 years since I've left the company, and I've often thought about how much more efficient I could have been with an inventory control program or app.  Now drawing from my experiences, I aim to develop such a tool.  In this GitHub repository ReadMe, I will provide an overview and breakdown of the features and functionalities of this inventory control web application.
+ 
+ ## Overview
 
-Below are entries to the form.
-
-Brand
-
-Product Name.
-
-Vendor.
-
-FDA status.
-
-Count of cases on each pallet.
-
-Price of product by lb.
-
-Total lb per pallet.
-
-Total cost per pallet.
-
-Entry date of product into freezer.
-
-Purchaser.
-
-Purchase date.
-
-Product expiration date.
-
-Item ID in system.
-
-Entry date into the system.
-
-Step 1, copy bookstore inventory layout and make same page with all the functionalities listed in bookstore_readme
-
-completed basic goals
-
-will attempt stretch goals when there is extra time
-
-Step 2, make freezer inventory page.
-
-add fav icon
+This is a web application for any type of general large scale warehouse inventory control.  The first type of warehouse I based this app on is a "Cold Storage" warehouse.  
