@@ -10,4 +10,14 @@ I managed inventory simultaneously across at least six different warehouses usin
  
  ## Overview
 
-This is a web application for any type of general large scale warehouse inventory control.  The first type of warehouse I based this app on is a "Cold Storage" warehouse.  
+This is a web application for any type of general large scale warehouse inventory control.  The first type of warehouse I based this app on is a "Cold Storage" warehouse.
+
+Four type of users
+
+General Admin/Warehouse Manager
+
+Sales
+
+Purchaser
+
+Customers with products in cold storage facilities.
