@@ -16,34 +16,32 @@
         <div class="header__right-">
             <h1 class="header__right-text">Cold Storage Warehouse Inventory</h1>
             <nav class="header__right-navbar">
-                    <a href="../index.html">Book Store Inventory</a>
                     <span class="header__right-navbar-about">About</span>
                     <span class="header__right-navbar-how-">How To Use</span>
                     <span class="header__right-navbar-help">Get Help</span>
                     <span class="header__right-navbar-user">Switch User</span>
-                    <span class="header__right-navbar-log">Log in / Log out</span>
+                    <span class="header__right-navbar-log">Log in</span>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="product">
-            <div class="product__img-container">
-                <h2 class="product__header">Product Image</h2>
-                <div class="product__img">
+        <section class="display">
+            <div class="display__product">
+                <h2 class="display__product-header">Product Image</h2>
+                <div class="display__product-img">
                     <img src="assets/cellProduct.png" alt="product__img">
                 </div>
-                <div class="warehouse-info">
-                    <h2 class="warehouse-info__header">Warehouse Information</h2>
-                    <label for="">Current Temp:</label>
-                    <span></span>
-                    <br>
-                    <label for="">Capacity</label>
-                    <span></span>
-                    <br>
-                    <label for="">Rack Space Left</label>
-                    <span></span>
-                </div>
-
+            </div>
+            <div class="display__warehouse-info">
+                <h2 class="display__warehouse-info__header">Warehouse Information</h2>
+                <label for="">Current Temp:</label>
+                <span></span>
+                <br>
+                <label for="">Capacity</label>
+                <span></span>
+                <br>
+                <label for="">Rack Space Left</label>
+                <span></span>
             </div>
         </section>
         <section class="inventory">
@@ -122,31 +120,33 @@
                 </form>
             </div>
         </section>
-        <section class="inventory-result">
-            <h2 class="inventory-result__header">Selected Product Information</h2>
-            <div class="inventory-result__table">
-                <div class="inventory-result__table-values">Item#</div>
-                <div class="inventory-result__table-values">Name</div>
-                <div class="inventory-result__table-values">Code</div>
-                <div class="inventory-result__table-values">Type</div>
-                <div class="inventory-result__table-values">Brand</div>
-                <div class="inventory-result__table-values">Vendor</div>
-                <div class="inventory-result__table-values">FDA</div>
-                <div class="inventory-result__table-values">Case</div>
-                <div class="inventory-result__table-values">Lb</div>
-                <div class="inventory-result__table-values">Weight</div>
-                <div class="inventory-result__table-values">Total</div>
-                <div class="inventory-result__table-values">Rack-ID</div>
-                <div class="inventory-result__table-values">Buyer</div>
-                <div class="inventory-result__table-values">PDate</div>
-                <div class="inventory-result__table-values">EDate</div>
-                <div class="inventory-result__table-values">XDate</div>
-                <div class="inventory-result__table-values"></div>
+        <section class="information">
+            <h2 class="information__header">Selected Product Information</h2>
+            <div class="information__table">
+                <label class="information__table-values"></label>
+                <label class="information__table-values">Name</label>
+                <label class="information__table-values">Code</label>
+                <label class="information__table-values">Type</label>
+                <label class="information__table-values">Brand</label>
+                <label class="information__table-values">Vendor</label>
+                <label class="information__table-values">FDA</label>
+                <label class="information__table-values">Case</label>
+                <label class="information__table-values">Lb</label>
+                <label class="information__table-values">Weight</label>
+                <label class="information__table-values">Total</label>
+                <label class="information__table-values">Rack</label>
+                <label class="information__table-values">Buyer</label>
+                <label class="information__table-values">PDate</label>
+                <label class="information__table-values">EDate</label>
+                <label class="information__table-values">XDate</label>
+                <label class="information__table-values"></label>
+                <a href=""></a>
             </div>
         </section>
     </main>
     <footer class="footer">
         <nav class="footer__navbar">
+            <a href="../index.html">Book Store Inventory</a>
             <span>Export Selected</span>
         </nav>
     </footer>    
