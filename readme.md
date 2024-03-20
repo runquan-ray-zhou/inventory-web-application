@@ -65,7 +65,7 @@ The body footer on the bottom will include option to export selected information
 #### General Admin / Warehouse Manager
 -   This user type will have access to all sections.  Also, this user will be able to change the different type of inputs in all sections.
 
-*Add ScreenShot*
+![General Admin](./freezer/assets/Screenshot%20General%20Admin.png)  
 
 #### Sales
 -   This user will only have access to the Search section.  And only the Display section, Search section will be displayed.  The Add section will be replaced by a condensed version of the Info section.
