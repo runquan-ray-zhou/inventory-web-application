@@ -21,7 +21,7 @@
                     <span class="header__right-navbar-how-">How To Use</span>
                     <span class="header__right-navbar-help">Get Help</span>
                     <span class="header__right-navbar-user">Switch User</span>
-                    <span class="header__right-avbar-log">Log in / Log out</span>
+                    <span class="header__right-navbar-log">Log in / Log out</span>
             </nav>
         </div>
     </header>
@@ -33,7 +33,7 @@
                     <img src="assets/cellProduct.png" alt="product__img">
                 </div>
                 <div class="warehouse-info">
-                    <h2 class="warehouse-info__header">Warehouse Info</h2>
+                    <h2 class="warehouse-info__header">Warehouse Information</h2>
                     <label for="">Current Temp:</label>
                     <span></span>
                     <br>
@@ -88,7 +88,7 @@
                     <label for="addFDA">FDA status
                     </label>
                     <input id="addCase" class="add-inventory__form-case" name="addCase" type="number"/>
-                    <label for="addCase">Case Count on Pallet
+                    <label for="addCase">Case Count per Pallet
                     </label>
                     <input id="addLb" class="add-inventory__form-lb" name="addLb" type="number"/>
                     <label for="addLb">lb per Case
@@ -97,7 +97,7 @@
                     <label for="addCost">Cost per lb
                     </label>
                     <input id="addWeight" class="add-inventory__form-weight" name="addWeight" type="number"/>
-                    <label for="addWeight">Total Weight on Pallet
+                    <label for="addWeight">Total Weight per Pallet
                     </label>
                     <input id="addTotal" class="add-inventory__form-total" name="addTotal" type="number"/>
                     <label for="addTotal">Total Cost per Pallet
@@ -123,10 +123,25 @@
             </div>
         </section>
         <section class="inventory-result">
-            <div>
-                <h2 class="inventory-result__header">Selected Product Information</h2>
-                <div>Values</div>
-                <div>Search Results</div>
+            <h2 class="inventory-result__header">Selected Product Information</h2>
+            <div class="inventory-result__table">
+                <div class="inventory-result__table-values">Item#</div>
+                <div class="inventory-result__table-values">Name</div>
+                <div class="inventory-result__table-values">Code</div>
+                <div class="inventory-result__table-values">Type</div>
+                <div class="inventory-result__table-values">Brand</div>
+                <div class="inventory-result__table-values">Vendor</div>
+                <div class="inventory-result__table-values">FDA</div>
+                <div class="inventory-result__table-values">Case</div>
+                <div class="inventory-result__table-values">Lb</div>
+                <div class="inventory-result__table-values">Weight</div>
+                <div class="inventory-result__table-values">Total</div>
+                <div class="inventory-result__table-values">Location</div>
+                <div class="inventory-result__table-values">Purchaser</div>
+                <div class="inventory-result__table-values">PDate</div>
+                <div class="inventory-result__table-values">EDate</div>
+                <div class="inventory-result__table-values">XDate</div>
+                <div class="inventory-result__table-values"></div>
             </div>
         </section>
     </main>

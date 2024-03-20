@@ -51,17 +51,6 @@ h2 {
     grid-template-rows:auto auto;
 }
 
-@media (max-width: 950px ) {
-
-    .main {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
 img {
     width: 375px;
 }
@@ -134,9 +123,42 @@ img {
     font-size: 1.5em;
 }
 
+.inventory-result__table {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+
+    div {
+    border: 2px solid grey;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 5px;
+    background: skyblue;
+    color: purple;
+    border-radius: 5px;
+    }
+
+}
+
+@media (max-width: 950px ) {
+
+    .add-inventory,
+    .inventory-result__table {
+        display: none;
+    }
+
+    .main {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width: 550px ) {
 
-    .add-inventory {
+    .add-inventory,
+    .inventory-result__table {
         display: none;
     }
 
