@@ -136,7 +136,7 @@ img {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
 
-    label {
+    button {
         font-size: 1.5em;
         font-weight: 900;
         padding: 1px;
