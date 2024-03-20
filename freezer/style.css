@@ -72,6 +72,10 @@ img {
 }
 
 .product__img-container {
+    display: block;
+}
+
+.product__img {
     display: flex;
     flex-direction: column;
     align-items: center;

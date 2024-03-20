@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cold Storage Warehouse App</title>
-    <link rel="icon" type="image/x-icon" href="/freezer/assets/freezerFavIcon.png">
-    <link rel="stylesheet" href="/freezer/style.css">
-    <script src="/freezer/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="assets/freezerFavIcon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
-            <img class="header__logo-img" src="/freezer/assets/freezerLogo.png" alt="header__logo">
+            <img class="header__logo-img" src="assets/freezerLogo.png" alt="header__logo">
         </div>
         <div class="header__right-">
             <h1 class="header__right-text">Cold Storage Warehouse Inventory</h1>
             <nav class="header__right-navbar">
+                    <a href="../index.html">Book Store Inventory</a>
                     <span class="header__right-navbar-about">About</span>
                     <span class="header__right-navbar-how-">How To Use</span>
                     <span class="header__right-navbar-help">Get Help</span>
@@ -28,15 +29,19 @@
         <section class="product">
             <div class="product__img-container">
                 <h2 class="product__header">Product Image</h2>
-                <img class ="product__img" src="/freezer/assets/cellProduct.png" alt="product__img">
+                <div class="product__img">
+                    <img src="assets/cellProduct.png" alt="product__img">
+                </div>
                 <div class="warehouse-info">
                     <h2 class="warehouse-info__header">Warehouse Info</h2>
-                    <input type="number">
-                    <label for="">:Current Temp</label>
-                    <input type="number" name="" id="">
-                    <label for="">:Capacity</label>
-                    <input type="number" name="" id="">
-                    <label for="">:Rack Space Left</label>
+                    <label for="">Current Temp:</label>
+                    <span></span>
+                    <br>
+                    <label for="">Capacity</label>
+                    <span></span>
+                    <br>
+                    <label for="">Rack Space Left</label>
+                    <span></span>
                 </div>
 
             </div>
