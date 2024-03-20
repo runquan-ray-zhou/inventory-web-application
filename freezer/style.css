@@ -113,6 +113,11 @@ img {
     margin: 5px;
     padding: 10px;
     font-size: 1.5em;
+    font-weight: 900;
+    background: skyblue;
+    color: purple;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
 
 .search-inventory__form-submit-button,
@@ -121,6 +126,11 @@ img {
     margin: 5px;
     padding: 10px;
     font-size: 1.5em;
+    font-weight: 900;
+    background: skyblue;
+    color: purple;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
 
 .inventory-result__table {
@@ -128,13 +138,13 @@ img {
     grid-template-columns: repeat(17, 1fr);
 
     div {
-    border: 2px solid grey;
-    font-size: 1.5em;
-    font-weight: 900;
-    padding: 5px;
-    background: skyblue;
-    color: purple;
-    border-radius: 5px;
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 1px;
+        background: skyblue;
+        color: purple;
+        border-radius: 5px;
+        border: 2px solid grey;
     }
 
 }
