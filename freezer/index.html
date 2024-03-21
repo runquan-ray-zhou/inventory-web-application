@@ -17,7 +17,7 @@
             <h1 class="header__right-text">Cold Storage Warehouse Inventory</h1>
             <nav class="header__right-navbar">
                     <span class="header__right-navbar-about">About</span>
-                    <span class="header__right-navbar-how-">How To Use</span>
+                    <span class="header__right-navbar-how">How To Use</span>
                     <span class="header__right-navbar-help">Get Help</span>
                     <span class="header__right-navbar-user">Switch User</span>
                     <span class="header__right-navbar-log">Log in</span>
@@ -124,27 +124,27 @@
             <h2 class="information__header">Selected Product Information</h2>
             <div class="information__table">
                 <button class="information__table-values"></button>
-                <button class="information__table-values">Name</button>
-                <button class="information__table-values">Code</button>
-                <button class="information__table-values">Type</button>
-                <button class="information__table-values">Brand</button>
-                <button class="information__table-values">Vendor</button>
-                <button class="information__table-values">FDA</button>
-                <button class="information__table-values">Case</button>
-                <button class="information__table-values">lb/Case</button>
-                <button class="information__table-values">Cost/lb</button>
-                <button class="information__table-values">Weight</button>
-                <button class="information__table-values">Total</button>
-                <button class="information__table-values">Rack</button>
-                <button class="information__table-values">Buyer</button>
-                <button class="information__table-values">PDate</button>
-                <button class="information__table-values">EDate</button>
-                <button class="information__table-values">XDate</button>
+                <button id="nameButton" class="information__table-values">Name</button>
+                <button id="codeButton" class="information__table-values">Code</button>
+                <button id="typeButton" class="information__table-values">Type</button>
+                <button id="brandButton" class="information__table-values">Brand</button>
+                <button id="vendorButton" class="information__table-values">Vendor</button>
+                <button id="fdaButton" class="information__table-values">FDA</button>
+                <button id="caseButton" class="information__table-values">Case</button>
+                <button id="lbButton" class="information__table-values">lb/Case</button>
+                <button id="costButton" class="information__table-values">Cost/lb</button>
+                <button id="weightButton" class="information__table-values">Weight</button>
+                <button id="totalButton" class="information__table-values">Total</button>
+                <button id="rackButton" class="information__table-values">Rack</button>
+                <button id="buyerButton" class="information__table-values">Buyer</button>
+                <button id="pDateButton" class="information__table-values">PDate</button>
+                <button id="eDateButton" class="information__table-values">EDate</button>
+                <button id="xDateButton" class="information__table-values">XDate</button>
                 <button class="information__table-values"></button>
                 <ul class="information__list">
-                    <li class="information__list-item"><span><img src="assets/fiveStarBrand.png" alt="fiveStarBrandShrimp"></span><span>Wild Shrimp U15</span><span>U15HON-WS-USA-30</span><span>Frozen Shrimp</span><span>Five Star</span><span>Star Foods Products</span><span>Released</span><span>49</span><span>30lb</span><span>$7.00</span><span>1470lb</span><span>$10290</span><span>A1A</span><span>Ray</span><span>2024-03-19</span><span>2024-03-20</span><span>2026-02-28</span><input class="information__remove-button" type="button" value="Remove" /></li>
-                    <li class="information__list-item"><span><img src="assets/champmarBrand.png" alt="champmarBrandShrimp"></span><span>Farm Shrimp 16/20</span><span>16/20-FS-ECU-24</span><span>Frozen Shrimp</span><span>Champmar</span><span>Songa</span><span>Released</span><span>70</span><span>24lb</span><span>$3.50</span><span>1680lb</span><span>$5880</span><span>A2A</span><span>Ray</span><span>2024-03-19</span><span>2024-03-20</span><span>2026-01-23</span><input class="information__remove-button" type="button" value="Remove" /></li>
-                    <li class="information__list-item"><span><img src="assets/kanniBrand.png" alt="kanniBrandShrimp"></span><span>Farm Shrimp 21/25</span><span>21/25-FS-IND-24</span><span>Frozen Shrimp</span><span>Kanni</span><span>Diamond Sea Food Exports</span><span>Released</span><span>70</span><span>24lb</span><span>$3.00</span><span>1680lb</span><span>$5040</span><span>A3A</span><span>Ray</span><span>2024-03-19</span><span>2024-03-20</span><span>2025-06-16</span><input class="information__remove-button" type="button" value="Remove" /></li>
+                    <li id="U15HON-WS-USA-30" class="information__list-item"><span><img src="assets/fiveStarBrand.png" alt="fiveStarBrandShrimp"></span><span>Wild Shrimp U15</span><span>U15HON-WS-USA-30</span><span>Frozen Shrimp</span><span>Five Star</span><span>Star Foods Products</span><span>Released</span><span>49</span><span>30lb</span><span>$7.00</span><span>1470lb</span><span>$10290</span><span>A1A</span><span>Ray</span><span>2024-03-19</span><span>2024-03-20</span><span>2026-02-28</span><input class="information__remove-button" type="button" value="Remove" /></li>
+                    <li id="16/20-FS-ECU-24" class="information__list-item"><span><img src="assets/champmarBrand.png" alt="champmarBrandShrimp"></span><span>Farm Shrimp 16/20</span><span>16/20-FS-ECU-24</span><span>Frozen Shrimp</span><span>Champmar</span><span>Songa</span><span>Released</span><span>70</span><span>24lb</span><span>$3.50</span><span>1680lb</span><span>$5880</span><span>A2A</span><span>Ray</span><span>2024-03-19</span><span>2024-03-20</span><span>2026-01-23</span><input class="information__remove-button" type="button" value="Remove" /></li>
+                    <li id="21/25-FS-IND-24" class="information__list-item"><span><img src="assets/kanniBrand.png" alt="kanniBrandShrimp"></span><span>Farm Shrimp 21/25</span><span>21/25-FS-IND-24</span><span>Frozen Shrimp</span><span>Kanni</span><span>Diamond Sea Food Exports</span><span>Released</span><span>70</span><span>24lb</span><span>$3.00</span><span>1680lb</span><span>$5040</span><span>A3A</span><span>Ray</span><span>2024-03-19</span><span>2024-03-20</span><span>2025-06-16</span><input class="information__remove-button" type="button" value="Remove" /></li>
                 </ul>
             </div>
         </section>
