@@ -1,5 +1,21 @@
 const addForm = document.querySelector(".add-inventory__form")
 
+function addRemoveFunc(ele) {
+    ele.addEventListener("click", event => {
+        event.target.parentNode.remove()
+    })
+
+    return ele
+}
+
+const buttons = document.querySelectorAll(".information__remove-button")
+
+for (let button of buttons) {
+    addRemoveFunc(button)
+}
+
+
+
 const ul = document.querySelector(".information__list")
 
 addForm.addEventListener("submit" , e => {
@@ -27,6 +43,8 @@ addForm.addEventListener("submit" , e => {
     li.className = "information__list-item"
 
     li.innerHTML = `<span><img src="" alt=""></span><span>${name}</span><span>${code}</span><span>${type}</span><span>${brand}</span><span>${vendor}</span><span>${fda}</span><span>${count}</span><span>${pound}lb</span><span>$${cost}</span><span>${weight}lb</span><span>$${total}</span><span>${location}</span><span>${purchaser}</span><span>${pDate}</span><span>${eDate}</span><span>${xDate}</span><input type="button" value="Remove" />`
+
+    
 
     ul.append(li)
 })
