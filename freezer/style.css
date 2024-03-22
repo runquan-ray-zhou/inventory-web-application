@@ -3,6 +3,14 @@
     font-family: monospace;
 }
 
+button,
+.add-inventory__form-reset-button,
+.add-inventory__form-submit-button,
+.search-inventory__form-reset-button,
+.search-inventory__form-submit-button {
+    cursor: pointer;
+}
+
 body {
     border: 1px solid grey;
 }

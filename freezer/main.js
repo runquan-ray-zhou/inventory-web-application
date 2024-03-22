@@ -44,3 +44,41 @@ addForm.addEventListener("submit" , e => {
     
     ul.append(li)
 })
+
+const allButton = document.querySelectorAll(".information__table-values")
+
+for (let button of allButton) {
+
+    button.addEventListener("click", e => {
+
+        const num = e.target.id.split(".")[0]
+
+        const allLi = document.querySelectorAll("li")
+
+        const array = [... allLi]
+
+        const strSort = array.sort((a, b) => (a.childNodes[num].innerText).localeCompare(b.childNodes[num].innerText) )
+
+        const numSort = array.sort((a, b) => parseFloat(a.childNodes[num].innerText) - parseFloat(b.childNodes[num].innerText))
+
+        if (Number.isInteger(parseInt(array[0].childNodes[num].innerText))) {
+
+            numSort.forEach(ele => {
+
+                ul.append(ele)
+    
+            })
+
+        } else {
+
+            strSort.forEach(ele => {
+    
+                ul.append(ele)
+    
+            })
+
+        }
+
+    })
+
+}

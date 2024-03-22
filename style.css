@@ -181,7 +181,7 @@ li {
     background: lightgrey;
 }
 
-.add-new__reset-button:hover,
+.add-new__reset-button,
 .add-new__submit-button,
 .resources__remove-button {
     cursor: pointer;
