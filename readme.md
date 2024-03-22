@@ -6,7 +6,7 @@ Hi, my name is Runquan (Ray) Zhou, a software developer refining my skills throu
 
 I gained inventory control experience at a very small frozen seafood import, export, wholesale company in Brooklyn, NY.  In this company of just 5 employees, I worked closely with the owner, handling clerical tasks and occasionally assisting with the warehouse and delivery duties.  My responsibilities included maintaining inventory control for products stored in various cold storage facilities across the US. 
 
-I managed inventory simultaneously across at least six different warehouses using only pen, paper, and Excel sheets due to limited resources.  This restricted my ability to generate comprehensive data for the company.  It's been over 12 years since I've left the company, and I've often thought about how much more efficient I could have been with an inventory control program or app.  Now drawing from my experiences, I aim to develop such a tool.  In this GitHub repository ReadMe, I will provide an overview and breakdown of the features and functionalities of this inventory control web application.
+I managed inventory simultaneously across at least six different warehouses using only pen, paper, and Excel sheets due to limited resources.  This restricted my ability to generate comprehensive data for the company.  It's been over 12 years since I've left the company, and I've often thought about how much more efficient I could have been with an inventory control program or app.  Now drawing from my experiences, I aim to develop such a tool.  In this GitHub repository readme, I will provide an overview and breakdown of the features and functionalities of this inventory control web application.
  
  ## Overview
 
@@ -54,7 +54,7 @@ The body footer on the bottom will include option to export selected information
 -   The add section will be a form with submit button and reset button.  After putting different information in the different input boxes.  A submit will generate a new info div for this item.  It will contain all the information put in the input box.   * NOTE *  Currently, I am not using any local storage or 3 party storage for this section. I will add later on.
 
 #### Info Section
--   The info section will display the searched inventory item.  With all the products detailed information lined under each column.  Currently, I am not using a table for this section.  I will try to do a grid style and see how that works.  If that is not very efficient I will move to table.
+-   The info section will display the searched inventory item.  With all the products detailed information lined under each column.  Currently, I am not using a table for this section.  I will try to do a grid style and see how that works.  I am sticking with a grid style.  I have also added the option to sort the list by clicking the corresponding button on the top row.
 
 #### Footer
 -   The footer will include a export information button.  Clicking that will export the listed items in the info section and can be printed out or attached to email.  What ever use you need.
@@ -86,7 +86,7 @@ The body footer on the bottom will include option to export selected information
 
 ## Conclusion
 
-This concludes a detailed explanation of the "General Warehouse Inventory Web App".  I will include more details as I progress along the way in improving this.  If you have any questions or suggestions, feel free to contact Me. 
+This concludes a detailed explanation of the "General Warehouse Inventory Web App".  I will include more details as I progress along the way in improving this.  If you have any questions or suggestions, feel free to contact me. 
 
 * Runquan (Ray) Zhou
 * Pursuit Fellow
