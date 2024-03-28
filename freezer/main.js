@@ -1,18 +1,37 @@
 const addForm = document.querySelector(".add-inventory__form")
 
+const addInventory = document.querySelector(".add-inventory")
+
+console.log(addInventory)
+
+// create function for select button
+
+function addSelectFunc(ele) {
+    ele.addEventListener("click", event => {
+        event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].style.display = "none"
+    })
+    return ele
+}
+
+const selectButtons = document.querySelectorAll(".information__select-button");
+
+for (let button of selectButtons) {
+    addSelectFunc(button)
+}
+
 // create function for remove button
 
 function addRemoveFunc(ele) {
     ele.addEventListener("click", event => {
-        event.target.parentNode.remove()
+        event.target.parentNode.parentNode.remove()
     })
 
     return ele
 }
 
-const buttons = document.querySelectorAll(".information__remove-button")
+const removeButtons = document.querySelectorAll(".information__remove-button")
 
-for (let button of buttons) {
+for (let button of removeButtons) {
     addRemoveFunc(button)
 }
 
@@ -42,7 +61,11 @@ addForm.addEventListener("submit" , e => {
 
     li.className = "information__list-item"
 
-    li.innerHTML = `<span><img src="" alt=""></span><span>${name}</span><span>${code}</span><span>${type}</span><span>${brand}</span><span>${vendor}</span><span>${fda}</span><span>${count}</span><span>${pound}lb</span><span>$${cost}</span><span>${weight}lb</span><span>$${total}</span><span>${location}</span><span>${purchaser}</span><span>${pDate}</span><span>${eDate}</span><span>${xDate}</span><input type="button" value="Remove" />`
+    li.innerHTML = `<span><img src="" alt=""></span><span>${name}</span><span>${code}</span><span>${type}</span><span>${brand}</span><span>${vendor}</span><span>${fda}</span><span>${count}</span><span>${pound}lb</span><span>${cost}</span><span>${weight}lb</span><span>${total}</span><span>${location}</span><span>${purchaser}</span><span>${pDate}</span><span>${eDate}</span><span>${xDate}</span><div class="information__option"><input class="information__select-button" type="button" value="Select" /><input class="information__remove-button" type="button" value="Remove" /></div>`
+
+    const button = li.querySelector(".information__remove-button")
+
+    addRemoveFunc(button)
     
     ul.append(li)
 })
