@@ -9,6 +9,7 @@ console.log(addInventory)
 function addSelectFunc(ele) {
     ele.addEventListener("click", event => {
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].style.display = "none"
+        console.log(event.target.parentNode.parentNode.style.border = "5px dotted black")
     })
     return ele
 }
