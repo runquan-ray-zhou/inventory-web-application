@@ -1,5 +1,7 @@
 const addForm = document.querySelector(".add-inventory__form")
 
+// create function for remove button
+
 function addRemoveFunc(ele) {
     ele.addEventListener("click", event => {
         event.target.parentNode.remove()
@@ -45,6 +47,8 @@ addForm.addEventListener("submit" , e => {
     ul.append(li)
 })
 
+// give table value buttons eventListener to sort
+
 const allButton = document.querySelectorAll(".information__table-values")
 
 for (let button of allButton) {
@@ -81,4 +85,19 @@ for (let button of allButton) {
 
     })
 
+}
+
+//give all img eventListeners to display image in img
+
+const productImages = document.querySelectorAll(".information__list-image")
+
+const mainImage = document.getElementById("display__product-image")
+
+for (let image of productImages) {
+
+    image.addEventListener("click", e => {
+
+        mainImage.src = image.src
+
+    })
 }
