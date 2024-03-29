@@ -105,7 +105,11 @@ img {
 .display__product-info {
     display: none;
 
+    li {
+        list-style: square;
+    }
 }
+
 .search-inventory,
 .add-inventory {
     display: grid;

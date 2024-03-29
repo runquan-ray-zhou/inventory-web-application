@@ -1,15 +1,24 @@
 const addForm = document.querySelector(".add-inventory__form")
 
-const addInventory = document.querySelector(".add-inventory")
+const selectedSummary = document.querySelector(".display__product-info-summary")
 
-console.log(addInventory)
+console.log(selectedSummary)
 
 // create function for select button
 
 function addSelectFunc(ele) {
     ele.addEventListener("click", event => {
-        event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].style.display = "none"
-        console.log(event.target.parentNode.parentNode.style.border = "5px dotted black")
+        event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[5].style.display = "none"
+        event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].style.display = "block"
+
+        if (event.target.parentNode.parentNode.style.border === "5px dotted purple") {
+            event.target.parentNode.parentNode.style.border = "black";
+        } else {
+            event.target.parentNode.parentNode.style.border = "5px dotted purple";
+        }
+
+        let selected = event.target.parentNode.parentNode
+        selectedSummary.innerHTML = `<ul><li>Product Name:  ${selected.childNodes[1].innerText}</li><br><li>Product Code:  ${selected.childNodes[2].innerText}</li><br><li>Product Type:  ${selected.childNodes[3].innerText}</li><br><li>Product Brand:  ${selected.childNodes[4].innerText}</li><br><li>Product Vendor:  ${selected.childNodes[5].innerText}</li><br><li>FDA Status:  ${selected.childNodes[6].innerText}</li><br><li>Case Count Per Pallet:  ${selected.childNodes[7].innerText}</li><br><li>lb per Case:  ${selected.childNodes[8].innerText}lb</li><br><li>Cost per lb:  $${selected.childNodes[9].innerText}</li><br><li>Total Weight per Pallet:  ${selected.childNodes[10].innerText}lb</li><br><li>Total Cost per Pallet:  ${selected.childNodes[11].innerText}</li><br><li>Pallet Location:  ${selected.childNodes[12].innerText}</li><br><li>Purchaser:  ${selected.childNodes[13].innerText}</li><br><li>Purchase Date:  ${selected.childNodes[14].innerText}</li><br><li>Entry Date:  ${selected.childNodes[15].innerText}</li><br><li>Expire Date:  ${selected.childNodes[16].innerText}</li></ul>`
     })
     return ele
 }
