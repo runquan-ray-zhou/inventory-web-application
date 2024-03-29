@@ -105,8 +105,15 @@ img {
 .display__product-info {
     display: none;
 
+    
     li {
         list-style: square;
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+
+    span {
+        color: purple;
     }
 }
 
