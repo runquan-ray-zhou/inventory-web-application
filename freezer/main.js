@@ -71,6 +71,8 @@ addForm.addEventListener("submit" , e => {
 
     li.className = "information__list-item"
 
+    li.style.display = "grid"
+
     li.innerHTML = `<span><img src="" alt=""></span><span>${name}</span><span>${code}</span><span>${type}</span><span>${brand}</span><span>${vendor}</span><span>${fda}</span><span>${count}</span><span>${pound}lb</span><span>${cost}</span><span>${weight}lb</span><span>${total}</span><span>${location}</span><span>${purchaser}</span><span>${pDate}</span><span>${eDate}</span><span>${xDate}</span><div class="information__option"><input class="information__select-button" type="button" value="Select" /><input class="information__remove-button" type="button" value="Remove" /></div>`
 
     const button = li.querySelector(".information__remove-button")
@@ -134,3 +136,25 @@ for (let image of productImages) {
 
     })
 }
+
+const allInventory = document.querySelectorAll(".information__list-item")
+
+const showButton = document.querySelector(".search-inventory__form-showAll-button")
+
+const hideButton = document.querySelector(".search-inventory__form-hideAll-button")
+
+showButton.addEventListener("click", event => {
+
+        for (let eachItem of allInventory) {
+            eachItem.style.display = "grid"
+        }
+
+} )
+
+hideButton.addEventListener("click", event => {
+
+    for (let eachItem of allInventory) {
+        eachItem.style.display = "none"
+    }
+
+} )

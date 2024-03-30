@@ -7,7 +7,9 @@ button,
 .add-inventory__form-reset-button,
 .add-inventory__form-submit-button,
 .search-inventory__form-reset-button,
-.search-inventory__form-submit-button {
+.search-inventory__form-submit-button,
+.search-inventory__form-hideAll-button,
+.search-inventory__form-showAll-button {
     cursor: pointer;
 }
 
@@ -105,7 +107,6 @@ img {
 .display__product-info {
     display: none;
 
-    
     li {
         list-style: square;
         font-weight: 900;
@@ -135,6 +136,14 @@ img {
         text-align: center
     }
 }
+
+.display__product-info-summary{
+    ul {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 .search-inventory__form-reset-button,
 .add-inventory__form-reset-button,
 .search-inventory__form-hideAll-button {
@@ -185,7 +194,7 @@ img {
 }
 
 .information__list-item {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(18, 1fr);
 
     span {
