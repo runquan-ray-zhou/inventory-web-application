@@ -136,7 +136,8 @@ img {
     }
 }
 .search-inventory__form-reset-button,
-.add-inventory__form-reset-button {
+.add-inventory__form-reset-button,
+.search-inventory__form-hideAll-button {
     grid-column: 1 / 3;
     margin: 5px;
     padding: 10px;
@@ -149,7 +150,8 @@ img {
 }
 
 .search-inventory__form-submit-button,
-.add-inventory__form-submit-button {
+.add-inventory__form-submit-button,
+.search-inventory__form-showAll-button {
     grid-column: 3 / 5;
     margin: 5px;
     padding: 10px;
